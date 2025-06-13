@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #111;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 22px;
+  color: #00ffe1;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00ffe1;
+  border-bottom: 2px solid #00ffe1;
+}
+
+.memories-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #00ffe1;
+}
+
+.future-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.future-container h1 {
+  font-size: 36px;
+  color: #f9d423;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.countdown div {
+  background: #ffffff10;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.countdown span {
+  font-size: 30px;
+  display: block;
+  color: #00ffd5;
+}
+
+.countdown p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #00ffe1;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .countdown {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .countdown div {
+    width: 40%;
+    min-width: 120px;
+    padding: 15px;
+  }
+
+  .countdown span {
+    font-size: 24px;
+  }
+
+  .countdown p {
+    font-size: 14px;
+  }
+}
+.future-container {
+  text-align: center;
+  margin-top: 80px;
+  padding: 0 20px;
+}

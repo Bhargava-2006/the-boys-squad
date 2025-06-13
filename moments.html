@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memories - The Boys Squad</title>
+  <link rel="stylesheet" href="moments.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">The Boys Squad</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a class="active" href="moments.html">Up coming Events</a></li>
+      <li><a href="About.html">About us</a></li>
+    </ul>
+  </nav>
+
+  <div class="future-container">
+    <h1>🎉 Ganesh Chaturthi Celebration 🎉</h1>
+    <p>Join us in celebrating Ganesh Chaturthi on <strong>August 27, 2025</strong></p>
+    <div class="countdown" id="countdown">
+      <div><span id="days">--</span><p>Days</p></div>
+      <div><span id="hours">--</span><p>Hours</p></div>
+      <div><span id="minutes">--</span><p>Minutes</p></div>
+      <div><span id="seconds">--</span><p>Seconds</p></div>
+    </div>
+  </div>
+
+  <script>
+    const countdown = () => {
+      const targetDate = new Date("August 27, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const gap = targetDate - now;
+
+      const second = 1000;
+      const minute = second * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      const days = Math.floor(gap / day);
+      const hours = Math.floor((gap % day) / hour);
+      const minutes = Math.floor((gap % hour) / minute);
+      const seconds = Math.floor((gap % minute) / second);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    };
+
+    setInterval(countdown, 1000);
+  </script>
+</body>
+</html>

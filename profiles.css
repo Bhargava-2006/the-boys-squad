@@ -1,0 +1,249 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #444;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00d4ff;
+  border-bottom: 2px solid #00d4ff;
+}
+
+
+.profile-container {
+  margin-top: 100px;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00d4ff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.4rem;
+  color: #00d4ff;
+}
+
+.nickname {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.quote {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #444;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #00d4ff;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00d4ff;
+  border-bottom: 2px solid #00d4ff;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+  }
+}
+
+/* Profile Container */
+.profile-container {
+  margin-top: 100px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00d4ff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.4rem;
+  color: #00d4ff;
+}
+
+.nickname {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.quote {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+}

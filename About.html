@@ -1,0 +1,48 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - The Boys Squad</title>
+  <link rel="stylesheet" href="About.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">The Boys Squad</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="moments.html">Up Coming Events</a></li>
+      <li><a class="active" href="About.html">About us</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>👑 About Us</h2>
+      <p>
+        Welcome to <strong>The Boys Squad</strong> – a brotherhood bonded not by blood, but by memories, madness, and unmatched vibes.  
+        We’re the ones who light up every moment, from silly laughs to festival blasts. Whether it's cricket on the street, late-night talks, wild selfies, or celebrating Ganesh Chaturthi with full-on energy, we make every second count.  
+        <br><br>
+        This site is not just a project, it’s our digital adda – where memories live, stories echo, and friendship never fades.  
+        <br><br>
+        💪 <strong>Built with code. Powered by friendship.</strong>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
+

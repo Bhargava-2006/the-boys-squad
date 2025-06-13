@@ -1,0 +1,55 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - The Boys Squad</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">The Boys Squad</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="moments.html">Up coming Events</a></li>
+      <li><a href="About.html">About us</a></li>
+    </ul>
+  </nav>
+
+  <section class="gallery-section">
+    <h1 class="gallery-title">Our Real Moments 📸</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/photo1.jpeg" alt="Photo 1" /></div>
+      <div class="gallery-item"><img src="images/photo2.jpeg" alt="Photo 2" /></div>
+      <div class="gallery-item"><img src="images/photo3.jpeg" alt="Photo 3" /></div>
+      <div class="gallery-item"><img src="images/photo4.jpeg" alt="Photo 4" /></div>
+      <div class="gallery-item"><img src="images/photo5.jpeg" alt="Photo 5" /></div>
+      <div class="gallery-item"><img src="images/photo6.jpeg" alt="Photo 6" /></div>
+      <div class="gallery-item"><img src="images/photo7.jpeg" alt="Photo 7" /></div>
+      <div class="gallery-item"><img src="images/photo8.jpeg" alt="Photo 8" /></div>
+      <div class="gallery-item"><img src="images/photo9.jpeg" alt="Photo 9" /></div>
+      <div class="gallery-item"><img src="images/photo10.jpeg" alt="Photo 10" /></div>
+      <div class="gallery-item"><img src="images/photo11.jpeg" alt="Photo 11" /></div>
+      <div class="gallery-item"><img src="images/photo12.jpeg" alt="Photo 12" /></div>
+      <div class="gallery-item"><img src="images/photo13.jpeg" alt="Photo 13" /></div>
+      <div class="gallery-item"><img src="images/photo14.jpeg" alt="Photo 14" /></div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
