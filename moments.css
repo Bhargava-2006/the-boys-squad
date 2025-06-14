@@ -147,3 +147,11 @@ body {
   margin-top: 80px;
   padding: 0 20px;
 }
+
+#fireworks-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+}
